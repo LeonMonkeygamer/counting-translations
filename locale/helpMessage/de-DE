@@ -1,0 +1,34 @@
+**Setup:**
+1. Erstelle einen Channel mit dem Name `#counting` **oder** gebe `c!channel` in den Channel ein in dem du Zählen möchtest, wenn du einen anderen Name nutzen willst.
+2. Starte in dem Channel mit zählen, beginnend mit `1`.
+
+**Zähl Regeln:**
+• Eine Person kann nicht zwei mal hintereinander zählen. (Ein Freund/Person wird benötigt)
+• Keine Bots nutzen.
+• Wenn du falsch zählst, wird ein "save" von deinem Konto abgezogen. Andernfalls wird das zählen resettet.
+
+**Saves:**
+• Vote [hier](https://counting.duckgroup.xyz/vote) um mehr saves zu erhalten. Überprüfe die Anzahl deiner saves mit `c!vote`.
+• Wenn du mindestens einen save hast, kannst du weiterzählen wenn du falsch zählst.
+__MESSAGE_BREAK__
+**Benutzer Commands:** *Eingaben mit `?` sind Optional*
+• `c!cs ?[Seitennummer]` - Sehe den Top Ten score
+• `c!lb ?[Seitennummer]` - Sehe den Top Ten high score
+• `c!ulb ?[Seitennummer]` - Sehe den Top Ten user score
+• `c!slb ?[Seitennummer]` - Sehe die Top Ten users in deiner guild
+• `c!user ?[@user/userId]` - Erhalte die Stats eines Users
+• `c!server` - Erhalte die Stats eines Servers
+• `c!donatesave` - Spende deiner Guilde ein save. (Fügt `0.2` saves deiner Guilde hinzu)
+• `c!transfersave [@user/userId]` - Schenke einem User ein save mit einer Steuer von `0.5`
+• `c!vote` - Vote für den Bot und erhalte saves.
+• `c!stats` - Zeigt die Statistiken des Bots und deine derzeitigen Fragmente.
+**Admin Commands:**
+• `c!failrole [@role/role id]` - Setzt eune Rolle für den Bot die beim zählen failen. Um dies zu deaktivieren führe den comman ohne spezifische Rolle aus.
+• `c!channel` - Configuriert den Bot um in einem Speziellen Channel zu reagieren, anstatt des Normalen Channels `#counting`
+• `c!numbersonly [on/off]` - Aktiviert nur Zahlen modus. Ruinirt da zählen mit einer Naricht die keine *Zahl* oder ein *Bot command* ist.
+• `c!language ?[languageCode]` - Setzt die Sprache mit der der Bot reagieren soll
+
+[Joine unserem Discord](https://discord.gg/rMQDwMH) wenn du Fragen hast.
+[Du magst den Bot? Erwägen Sie, mit Patreon einen Beitrag zu leisten.](https://www.patreon.com/counting) es hilf uns sehr.
+
+[Lade den Bot zu deiner eigenen Guilde ein.](https://counting.duckgroup.xyz/invite)
