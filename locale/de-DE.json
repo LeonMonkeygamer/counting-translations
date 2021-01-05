@@ -1,2 +1,86 @@
 {
+    "countProcess.failReason.numbersOnly": "Dieser Counting Channel ist im nur zahlen Modus.",
+    "countProcess.failReason.doubleCount": "**Du kannst nicht zweimal hintereinander zählen.**",
+    "countProcess.failReason.wrongNumber": "**Falsche Zahl.**",
+    "countProcess.warning.wrongNumberAlreadyZero": "Falsche Zahl! Die nächste Zahl ist `1`. **Es wurden keine Statistiken geändert, dar die aktuelle Zahl 0 ist.**",
+    "countProcess.warning.memberSaveUsed": "⚠ <@{authorId}> Du hast **1** Save benutzt. Du hast **{savesLeft}** übrig. Die nächste Zahl ist **{nextNumber}**",
+    "countProcess.warning.guildSaveUsed": "⚠ <@{authorId}> Du hast **1** Guild save! Du hast **{savesLeft}/2** Guild Saves übrig. Die nächste Zahl ist **{nextNumber}**",
+    "countProcess.failAlert.embedDescription": "Vote [hier](https://counting.duckgroup.xyz/vote) um Saves zu bekommen, so kannst du das nächste mal weiter Zählen. `c!help`.",
+    "countProcess.failAlert.messageContent": "<@{authorId}> Ruiniert bei **{number}**!! Nächste Zahl ist **1**. {failReason}",
+
+
+    "messageDeleted.messageContent": "<@{memberId}> hat die Naricht gelöscht `{currentNumber}`. Die nächste Zahl ist `{nextNumber}`.",
+
+
+    "commands.generic.error.embedTitle": "Error.",
+    "commands.generic.error.missingAdministrator": "<@{authorId}> du brauchst `Administrator` berechtigungen um diesen Command zu nutzen.",
+    "commands.generic.error.authorNotFoundInDatabase": "Du hast bis jetzt noch nicht gezählt",
+    "commands.generic.error.userNotFoundInDatabase": "Spezieller User nicht gefunden. (Noch nicht gezählt?)",
+    "commands.generic.error.badUserConversion": "Der angegebene Benutzer kann nicht konvertiert werden: `{arg}`",
+    "commands.generic.enabled": "aktiviert",
+    "commands.generic.disabled": "deaktiviert",
+
+    "commands.stats.embedTitle": "Bot Statistiken",
+    "commands.stats.embedField.global.name": "Global",
+    "commands.stats.embedField.global.value": "**Gesamte Bot Guilds:** `{guilds}`\n**Gesamte Bot Shards:** `{shards}`\n**Derzeitige MPS:** `{mps}`",
+    "commands.stats.embedField.shard.name": "Dieser Shard (ID `{shardId}`)",
+    "commands.stats.embedField.shard.value": "**Guilden auf Shard:** `{guilds}`\n**Shards gestartet:** `{uptime}`\n**Derzeitige MPS:** `{mps}`",
+
+    "commands.help.embedDescription": "__helpMessage__",
+    "commands.help.embedFooter": "Gemacht von Duck#0001, gepflegt von tt2468#2468 | Guilds: {guilds:,d} | Uptime: {uptime:,d}s",
+
+    "commands.channel.content": "<@{authorId}> Der counting Channel wurde zu diesem Channel aktualisiert.",
+
+    "commands.user.embedField.global.name": "Global Statistiken",
+    "commands.user.embedField.global.value": "Correct rate: **{correctRate}**\nTotal correct: **{totalCorrect:,d}**\nTotal incorrect: **{totalIncorrect:,d}**\nScore: **{score:,d} (#{rank:,d})**\nSaves: **{saves:g}/{saveSlots:g}**",
+    "commands.user.embedField.local.name": "Statistiken von `{guildName}`",
+    "commands.user.embedField.local.value": "Correct rate: **{correctRate}**\nTotal correct: **{totalCorrect:,d}**\nTotal incorrect: **{totalIncorrect:,d}**\nLast Active: **{lastActive}**\nHighest Valid Count: **{highestCount:,d} ({highestCountTime})**\nSaves Used: **{savesUsed:,d}**",
+
+    "commands.server.embedTitle": "Info for `{guildName}`",
+    "commands.server.embedDescription": "Current Number: **{currentNumber:,d}**\nLast counted by: <@{lastMember}>\nGuild Saves: **{guildSaves}/2**\nHigh Score: **{highScore:,d} ({highScoreTime})**\nRank: **{currentRank:,d}/{totalGuildEntries:,d}**\nSaves Used: **{savesUsed:,d}**\nNumbers Only Mode: **{numbersOnly}**",
+
+    "commands.lb.embedTitle": "*HIGH SCORES*",
+    "commands.lb.embedFooter": "c!help | Page {page}",
+
+    "commands.cs.embedTitle": "*CURRENT SCORES*",
+    "commands.cs.embedFooter": "c!help | Page {page}",
+
+    "commands.ulb.embedTitle": "*TOP USERS*",
+    "commands.ulb.embedFooter": "c!help | Page {page}",
+
+    "commands.slb.embedTitle": "*TOP USERS IN `{guildName}`*",
+    "commands.slb.embedFooter": "c!help | Page {page}",
+
+    "commands.donatesave.embedTitle": "Save donated!",
+    "commands.donatesave.embedDescription": "`{donatedSaves}` of your saves have been donated to this guild, adding `{addedSaves}` to its saves, for a total of `{guildSaves}/2` guild saves. (1 Guild Save = 5 User Saves)\n\nYou have `{memberSaves}` saves left.",
+    "commands.donatesave.error.notEnoughSaves": "You need to have at least `1` save in order to donate.",
+    "commands.donatesave.error.maxSavesReached": "This guild already has the maximum amount of saves! (2)",
+
+    "commands.transfersave.embedTitle": "Save transferred!",
+    "commands.transfersave.embedDescription": "You have transferred `{transferredSaves}` saves to <@{targetId}>. `{deductedSaves}` saves have been deducted from your account.\n\nYou have `{savesLeft}` saves left.",
+    "commands.transfersave.error.noTargetSpecified": "You must specify a user to give a save to.",
+    "commands.transfersave.error.notEnoughSaves": "You need to have at least `1.5` saves in order to transfer.",
+    "commands.transfersave.error.cannotSelfTransfer": "You cannot transfer saves to yourself!",
+    "commands.transfersave.error.targetHasMaxSaves": "Target user already has maximum amount of saves!",
+
+    "commands.failrole.roleDisabledMessage": "The fail role has been disabled.",
+    "commands.failrole.roleEnabledMessage": "The fail role has been updated. ID: `{roleId}` | Role Name: `{roleName}`",
+    "commands.failrole.error.botMissingPermissions": "I don't have `manage_roles` permissions.",
+    "commands.failrole.error.roleNotFound": "Unable to find existing role: `{arg}`",
+    "commands.failrole.error.cannotApplyRole": "Found role for `{arg}` but I don't have permissions to apply it. Try moving the role lower in the list.",
+
+    "commands.numbersonly.embedTitle": "Numbers-only mode has been {state}.",
+    "commands.numbersonly.error.missingModeArgument": "<@{authorId}> You must specify a mode. Modes: `enable`, `disable`.",
+    "commands.numbersonly.error.invalidMode": "<@{authorId}> Valid mode not found. Modes: `enable`, `disable`.",
+
+    "commands.vote.embedDescription": "{descriptionPretext}You currently have **{saves:g}/{saveSlots:g}** saves.\n[Click here to vote.](https://discordbots.org/bot/510016054391734273/vote)",
+    "commands.vote.canVote": "✅ You can vote now.\n",
+    "commands.vote.cannotVote": "❌ You have already voted.\nYou can vote again in **{hoursLeft:g} hours**.\n",
+
+    "commands.language.embedTitle": "The bot language has been changed to `{arg}` in this guild.",
+    "commands.language.argumentMissing.embedTitle": "Available languages:",
+    "commands.language.argumentMissing.embedDescription": "Use the corrosponding language code in your command to set the bot language in this guild. `c!language [code]`",
+    "commands.language.argumentMissing.embedField.codes.name": "Language Code",
+    "commands.language.argumentMissing.embedField.descriptions.name": "Description",
+    "commands.language.error.invalidCode": "Unknown language code: `{arg}`"
 }
